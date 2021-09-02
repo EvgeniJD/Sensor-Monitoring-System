@@ -1,0 +1,12 @@
+Message format between the sensors and the web server:
+	On sensor connected: 
+		1. Sensor emit emitter with name 'sensor name + 'getId'' and arguments  'sensor name';
+		2. Server check in DB for sensor with same name and emit emitter with name 'sensor name + 'getId'' and
+			arguments 'sensor id';
+		3. Sensor get its id and then initialize unique emitters and listeners;
+
+	Unique emitters and listeners for every sensor:
+		1. Sensor emit emitter with name ''sensor name' | 'sensor id'' and send object 
+			"{ id: UniqueID(Number), timestamp: Date, temp: Number, hum: Number }" on every 5 seconds;
+	 	2. Sensor listen for 'start_sensor_ + 'sensor id'' emitter to start emitting data;
+		3. Sensor listen for 'pause_sensor_ + 'sensor id'' emitter to pause emitting data;

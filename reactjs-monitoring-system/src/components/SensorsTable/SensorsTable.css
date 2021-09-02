@@ -1,0 +1,38 @@
+.app_heading {
+    text-align: center;
+    margin-top: 0;
+}
+
+.sensorsTable {
+    width: 80%;
+    margin: auto;
+}
+
+table, th, td {
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+}
+
+tr:not(.sensor_details, .tr_header) {
+    cursor: pointer;
+}
+
+tr:hover:not(.sensor_details, .tr_header) {
+    background-color: white;
+}
+
+.sensorsTable th {
+    text-align: start;
+    width: 45%;
+    background-color: #f44336;
+}
+
+
+
+.sensorsTable .statusColumn {
+    width: 10%;
+}

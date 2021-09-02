@@ -1,0 +1,46 @@
+.form_wrapper {
+    width: 300px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+legend {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form_wrapper input {
+    margin: 5px;
+    font-size: 16px;
+}
+
+.add_sensor_btn {
+    align-self: flex-start;
+    padding: 6px 12px;
+    background-color: #b1f436;
+    font-weight: bold;
+    border: none;
+    margin-top: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 0 2px 1px gray;
+}
+
+.add_sensor_btn:hover {
+    background-color: #c8f377;
+}
+
+.add_sensor_btn:active {
+    box-shadow: none;
+}
+
+.error_msg {
+    color: red;
+    font-weight: bold;
+}

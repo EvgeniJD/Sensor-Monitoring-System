@@ -1,0 +1,80 @@
+.live_data_wrapper {
+    display: flex;
+}
+
+.live_data_graph {
+    position: relative;
+}
+
+.hum_real, .temp_real {
+    position: absolute;
+    left: 500px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    width: 100px;
+    height: 65px;
+    text-align: center;
+}
+
+.hum_real p, .temp_real p {
+    margin: 0;
+}
+
+.hum_real {
+    top: 85px;
+    background-color: #C2E5CF;
+}
+
+.temp_real {
+    bottom: 45px;
+    background-color: #C3CDE3;
+}
+
+.real_data {
+    font-size: 32px;
+}
+
+.live_data_cta {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin-left: 110px;
+    vertical-align: middle;
+    justify-content: center;
+}
+
+.live_data_cta_btn {
+    margin-top: 40px;
+    padding: 20px 40px;
+    font-size: 32px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 0 2px 1px gray;
+}
+
+.disable_btn {
+    background-color: #f44336;
+}
+
+.enable_btn {
+    background-color: #b1f436;
+}
+
+.connecting_btn {
+    background-color: orange;
+}
+
+.disable_btn:hover {
+    background-color: #f1695f;
+}
+
+.enable_btn:hover {
+    background-color: #c8f377;
+}
+
+.live_data_cta_btn:active {
+    box-shadow: none;
+}

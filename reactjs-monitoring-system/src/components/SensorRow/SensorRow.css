@@ -1,0 +1,23 @@
+.sensor_details {
+    min-height: 500px;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.green {
+    background-color: rgb(35, 143, 13);
+}
+
+.gray {
+    background-color: lightgray;
+}
+
+.tr_beige {
+    background-color: beige;
+}
